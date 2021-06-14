@@ -2,7 +2,16 @@ let swohHideProducts = document.getElementById('hide-products');
 let buttonShowProduct = document.getElementById('show-more');
 let bannerBtn = document.getElementById('banner__btn');
 let productsBtn = document.getElementById('products__btn');
+let headerSection = document.getElementById('header');
 
+window.addEventListener('scroll', function(){
+    if ( window.scrollY > 100 ) {
+        headerSection.style.backgroundColor = "#f2f2f2";
+    } else {
+         headerSection.style.backgroundColor = "";
+    }
+   console.log( )
+});
 
 
 productsBtn.onclick = function(){
